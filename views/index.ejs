@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/particles.css">
+
+    <title>Music Frecuenci</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+    <div class="particulas">
+        <!--<div class="circle-container">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-container">
+                <div class="circle"></div>
+            </div> -->
+    </div>
+    <div class="reproducStyle">
+        <div id="info-music" class="content-info-music">
+            <div>
+                <p><span id="autor"></span><span id="nombre"></span></p>
+            </div>
+            <div class="img-music">
+                <img class="imgCaratula" src="/img/abstract.jpg" alt="Imagen centrada">
+            </div>
+            <div> 
+                <canvas id="canvas"></canvas>
+            </div>
+            <div style="display: flex;">
+                <button id="atras"><img class="imgAtras" src="/img/adelante1.png"></button>
+                <button id="pause_play"><img id="img_play_pause" src="/img/play.png"></button>
+                <button id="adelante"><img class="imgAdelante" src="/img/adelante1.png"></button>
+            </div>
+            <div>
+                <audio style="display: none;" crossorigin="anonymous" id="audio" controls>
+                    <source id="audioSource"
+                        src="https://dl.dropboxusercontent.com/scl/fi/78xrq0kiwxqa8ditjovqw/I-DON-T-WANT-TO-SET-THE-WORLD-ON-FIRE-THE-INK-SPOTS-SUBTITULADA.mp3?rlkey=dx2mueyy3ek6mhgkvtaz1j6a9&st=thhj7k66"
+                        type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/javascripts/app.js"> </script>
+
+</body>
+
+</html>

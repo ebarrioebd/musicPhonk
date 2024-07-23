@@ -1,0 +1,122 @@
+canvas{
+    width: 85%;
+    height: auto; 
+} 
+
+audio{
+    filter: drop-shadow(2px 4px 6px black);
+    mix-blend-mode: color-burn;
+}
+.container {
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute; 
+    background-image: url('/img/abstract.jpg');
+    background-size: cover;
+    /* La imagen de fondo cubre todo el contenedor */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* No repite la imagen de fondo */
+
+}
+.particulas{ 
+    filter: blur(2px);  
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('/img/particle4.gif');
+    background-size: cover;
+    /* La imagen de fondo cubre todo el contenedor */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat; 
+}
+.reproducStyle {
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    /*background: radial-gradient(#80FFDB, #5390D9);
+    background: radial-gradient(ellipse 49% 249px, #ffffff 17%, #ffffff29 50%, #00000091);
+    background: radial-gradient(#ffffff80, #0000007d);*/
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.imgCaratula {
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 23px;
+    width: 200px;
+    height: auto;
+}
+
+.volume-containera {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#volumeControl {
+    width: 150px; /* Ancho del control deslizante antes de la rotación */
+    transform: rotate(-90deg); /* Rotar el control 90 grados en sentido antihorario */
+    transform-origin: center;
+}
+.content-info-music div{
+    display: flex;
+    width: 88%;
+    justify-content: space-evenly;
+}
+.content-info-music{
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.6);
+    display: grid;
+    border-radius: 15px;
+    padding: 15px;
+    background: #6992ff42;
+    width: 80%;
+    height: auto;
+    justify-items: center;
+    justify-content: center;
+}
+.range-info{
+    font-family: sans-serif;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons-music{
+    display: flex;
+    align-items: center;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border: unset;
+    background: transparent;
+}
+.imgAtras{
+    filter: invert(1);
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+.imgAdelante{
+    filter: invert(1);
+    width: 100%;
+    height: auto; 
+}
+#img_play_pause{
+    filter: invert(1);
+    width: 100%;
+    height: auto; 
+}
+#adelante :hover img{
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 23px;
+}
